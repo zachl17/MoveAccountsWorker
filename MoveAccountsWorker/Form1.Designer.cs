@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.txtInterestRate = new System.Windows.Forms.TextBox();
-            this.txtStatus = new System.Windows.Forms.TextBox();
+            this.txtActionDate = new System.Windows.Forms.TextBox();
+            this.txtDebtor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblRemainingTotalCount = new System.Windows.Forms.Label();
             this.lblRemainingTotal = new System.Windows.Forms.Label();
@@ -42,26 +42,26 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(22, 84);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 31);
+            this.label1.Name = "lblActionDate";
+            this.label1.Size = new System.Drawing.Size(153, 31);
             this.label1.TabIndex = 45;
-            this.label1.Text = "Interest Rate";
+            this.label1.Text = "Action Date";
             // 
-            // txtInterestRate
+            // txtActionDate
             // 
-            this.txtInterestRate.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold);
-            this.txtInterestRate.Location = new System.Drawing.Point(209, 85);
-            this.txtInterestRate.Name = "txtInterestRate";
-            this.txtInterestRate.Size = new System.Drawing.Size(136, 30);
-            this.txtInterestRate.TabIndex = 44;
+            this.txtActionDate.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold);
+            this.txtActionDate.Location = new System.Drawing.Point(209, 85);
+            this.txtActionDate.Name = "txtActionDate";
+            this.txtActionDate.Size = new System.Drawing.Size(136, 30);
+            this.txtActionDate.TabIndex = 44;
             // 
-            // txtStatus
+            // txtDebtor
             // 
-            this.txtStatus.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold);
-            this.txtStatus.Location = new System.Drawing.Point(209, 22);
-            this.txtStatus.Name = "txtStatus";
-            this.txtStatus.Size = new System.Drawing.Size(136, 30);
-            this.txtStatus.TabIndex = 43;
+            this.txtDebtor.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Bold);
+            this.txtDebtor.Location = new System.Drawing.Point(209, 22);
+            this.txtDebtor.Name = "txtDebtor";
+            this.txtDebtor.Size = new System.Drawing.Size(136, 30);
+            this.txtDebtor.TabIndex = 43;
             // 
             // label2
             // 
@@ -69,9 +69,9 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(22, 18);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 31);
+            this.label2.Size = new System.Drawing.Size(96, 31);
             this.label2.TabIndex = 42;
-            this.label2.Text = "Status";
+            this.label2.Text = "Debtor";
             // 
             // lblRemainingTotalCount
             // 
@@ -109,14 +109,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(400, 324);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtInterestRate);
-            this.Controls.Add(this.txtStatus);
+            this.Controls.Add(this.txtActionDate);
+            this.Controls.Add(this.txtDebtor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblRemainingTotalCount);
             this.Controls.Add(this.lblRemainingTotal);
             this.Controls.Add(this.btnDone);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Move Accounts Worker";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,8 +126,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtInterestRate;
-        private System.Windows.Forms.TextBox txtStatus;
+        private System.Windows.Forms.TextBox txtActionDate;
+        private System.Windows.Forms.TextBox txtDebtor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblRemainingTotalCount;
         private System.Windows.Forms.Label lblRemainingTotal;
